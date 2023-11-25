@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import SideMenu  from './Components/SideMenu/SideMenu'
+import React from 'react';
+import { Provider } from 'react-redux';
+import ToDoList from './components/ToDoList'
+import store from './redux/store/configureStore';
 
 function App() {
   return (
-    <div className="App">
-      <SideMenu />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <ToDoList />
+      </div>
+    </Provider>
   );
 }
 
