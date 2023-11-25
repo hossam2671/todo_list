@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    background-color: #ca8bfe;
+    min-height: 100vh;
+}
+.side{
+    width: 30%;
+    margin-left: 0.5%;
+    background-color: white;
+    min-height: 100vh;
+}
+.side .menu_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    align-items: center;
+    position: relative;
+}
+.side .menu_header::after{
+    position: absolute;
+    content: "";
+    background-color: #ca8bfe;
+    width: 50%;
+    height: 4px;
+    left: 25%;
+    bottom: -20px;
+}
+.side .menu_header img{
+    width: 100px;
+    height: 100px;
+}
+.side .menu_header .header_text h4{
+    font-size: 22px;
+    text-align: left;
+    color: #717082;
+}
+.side .menu_header .header_text h3{
+    font-size: 24px;
+    color: #ca8bfe;
+}
+.side .tasks{
+    /* padding-top: 120px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 120px 0;
+}
+.side .tasks > i{
+    font-size: 30px;
+    color: #ca8bfe;
+}
+.side .tasks .tasks__cats{
+    width: 60%;
+}
+.side .tasks .tasks__cats h3{
+    text-align: left;
+    margin-bottom: 22px;
+    color: #717082;
+    font-weight: 500;
+    font-size: 22px;
+}
+.side .tasks .tasks__cats .tasks__cat{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.side .tasks .tasks__cats .tasks__cat .circle{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+.side .tasks .tasks__cats .tasks__cat .circle.pink{
+    background-color: #fd99af
+}
+.side .tasks .tasks__cats .tasks__cat .circle.blue{
+    background-color: #3fd4f4
+}
+.side .tasks .tasks__cats .tasks__cat .circle.yellow{
+    background-color: #fac608
+}
+.side .tasks .tasks__cats .tasks__cat h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #717082;
+}
+.side .tasks .tasks__cats .tasks__cat:last-child h4{
+    color: #71708271;
+}
+.side .tasks .tasks__cats .tasks__cat:last-child i{
+    color: white;
+    background-color: #71708271;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.side .scheduled{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px 0;
+}
+.side .scheduled i{
+    font-size: 30px;
+    color: #71708245;
+}
+.side .scheduled h3{
+    text-align: left;
+    color: #717082;
+    font-weight: 500;
+    font-size: 22px;
+}
+.side .setting{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 120px 0;
+}
+.side .setting i{
+    font-size: 30px;
+    color: #71708245;
+}
+.side .setting h3{
+    text-align: left;
+    color: #717082;
+    font-weight: 500;
+    font-size: 22px;
+}
